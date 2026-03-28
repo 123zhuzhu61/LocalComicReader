@@ -1,2 +1,19 @@
-# LocalComicReader
-基于PySide6开发的轻量级本地漫画阅读器，支持本地文件夹/zip/cbz压缩包漫画加载、虚拟滚动、阅读进度记忆，支持页码/文件名跳转、自定义图片显示宽度，低内存占用且交互流畅 | A lightweight local comic reader built with PySide6, supporting local folder/zip/cbz comic loading, virtual scrolling, progress memory, page/filename jump, customizable image width, low memory usage and smooth interaction.
+# LocalComicReader漫画阅读器
+功能
+- 📁 支持本地图片文件夹、ZIP压缩包漫画加载，无缝拼接所有图片
+- 🚀 虚拟滚动加载，上千张图片流畅浏览（仅渲染可视区域）
+- 📱 自定义显示宽度，实时缩放适配阅读（注意：推荐在首张图片进行缩放）
+- 📌 阅读进度记忆，重新打开自动回到上次位置
+- 🔍 页码/文件名跳转、首页/尾页快速定位
+- 📊 自然排序，符合漫画文件名阅读习惯
+
+运行方式：运行main.py
+
+支持格式
+- 图片：jpg/jpeg/png/webp/bmp
+- 压缩包：zip/cbz（未测试）
+
+打包:
+
+```bash
+pyinstaller --onefile --windowed --name 漫画阅读器 main.py
